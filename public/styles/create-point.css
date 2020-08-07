@@ -1,0 +1,177 @@
+#page-create-point {
+   width: 90%x;
+   max-width: 1100px;
+   
+   margin: 0 auto;
+}
+
+#page-create-point header {
+    margin-top: 48px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#page-create-point header a {
+    color: var(--title-color);
+    font-weight: bold;
+
+    display: flex;
+    align-items: center;
+}
+
+#page-create-point header a span {
+    background-image: url('../assets/arrow-left.svg');
+    display: flex;
+    margin-right: 16px;
+    width: 20px;
+    height: 24px;
+}
+
+#page-create-point form {
+    
+    background-color: white;
+    margin-top: 80px;
+    /* preenchimento */
+    padding: 64px;
+    border-radius: 8px;
+
+    max-width: 730px;
+    /* alinhando ao centro */
+    margin: 80px auto;
+}
+
+#page-create-point form h1 {
+    font-size: 36px;
+}
+#page-create-point form fieldset {
+    margin-top: 64px;
+    border: 0;
+}
+
+#page-create-point form fieldset legend {
+    margin-bottom: 40px;
+}
+#page-create-point form fieldset legend h2 {
+    font-size: 24px;
+}
+
+#page-create-point form .field {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 24px;
+    flex: 1;
+}
+
+#page-create-point form .field-group {
+    display: flex;
+
+}
+
+#page-create-point form 
+input, 
+select {
+    background-color: #f0f0f5;
+    border: 0;
+    /* 16px cima e baixo, 24px direita e esquerda */
+    padding: 16px 24px;
+    font-size: 16px;
+    /* linha quando seleciona */
+    outline: none;
+    border-radius: 8px;
+}
+
+#page-create-point form 
+select {
+    /* rezeta */
+    /* chrome */
+    -webkit-appearance: none;
+    /* mozila */
+    -moz-appearance: none;
+    appearance: none;
+}
+
+#page-create-point form label {
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+#page-create-point form .field-group .field + .field {
+    margin-left: 24px;
+}
+#page-create-point form button {
+    width: 256px;
+    height: 56px;
+    background-color: var(--primary-color);
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    border: 0;
+    margin-top: 40px;
+
+    transition: background-color 400ms;
+}
+#page-create-point form button:hover {
+    background-color: #2fb86e;
+}
+#page-create-point 
+form fieldset 
+.items-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* espaçamento */
+    gap: 16px;
+}
+#page-create-point 
+form fieldset 
+.items-grid li {
+   background-color: #f5f5f5; 
+   /* tirando os bulets (bolinhas) */
+   list-style: none;
+   border: 2px solid #f5f5f5;
+   border-radius: 8px;
+   height: 180px;
+
+   /* top: 32; laterais: 24; bottom: 16 */
+   padding: 32px 24px 16px;
+
+   /* alinhando */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    text-align: center;
+
+    /* clicável */
+    cursor: pointer;
+}
+#page-create-point 
+form fieldset 
+.items-grid li span {
+    margin-top: 12px;
+    flex: 1;
+    display: flex;
+    align-items: center;
+
+    color: var(--title-color);
+}
+
+#page-create-point 
+form fieldset 
+.items-grid li.selected {
+    /* li.selected */
+    background-color: #e1faec;
+    border:  2px solid #34cb79;
+}
+
+#page-create-point 
+form fieldset 
+.items-grid li img,
+li span {
+    /* não sou clicáveis, para selecionar apenas o li */
+    pointer-events: none;
+}
+
+
